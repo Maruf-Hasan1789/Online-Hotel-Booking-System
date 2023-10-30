@@ -29,7 +29,7 @@ It's a online hotel booking system backend application having multiple REST API 
 
 | **Schema**         | **Type** | **Properties**                 |
 | :----------------- | :------- | :----------------------------- |
-| #HotelInfoResponse | object   | uuid (String, UUID)            |
+|  HotelInfoResponse | object   | uuid (String, UUID)            |
 |                    |          | name (String)                  |
 |                    |          | address (String)               |
 | RoomRequest        | object   | hotelName (String)             |
