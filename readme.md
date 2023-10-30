@@ -13,39 +13,39 @@ It's a online hotel booking system backend application having multiple REST API 
 
 | **Response** | **Description** | **Schema**                                       |
 | :----------- | :-------------- | :----------------------------------------------- |
-| 200          | OK              | array of [HotelInfoResponse](#hotelinforesponse) |
-|              |                 | string                                           |
-| 201          | Created         | string                                           |
-| 200          | OK              | array of [RoomResponse](#roomresponse)           |
-| 200          | OK              | [HotelInfoResponse](#hotelinforesponse)          |
-| 200          | OK              | integer (int32)                                  |
+| 200          | OK              | Array of HotelInfoResponse |
+| 201          | Created         | String                                           |
+| 200          | OK              | Array of RoomResponse           |
+| 200          | OK              | HotelInfoResponse      |
+| 200          | OK              | Integer                                |
 
 | **Parameters**      | **In** | **Type** | **Required** |
 | :------------------ | :----- | :------- | :----------- |
-| hotelName, roomType | query  | string   | true         |
-| hotelName, roomType | path   | string   | true         |
-| name                | path   | string   | true         |
+| hotelName, roomType | query  | String   | true         |
+| hotelName, roomType | path   | String   | true         |
+| name                | path   | String   | true         |
 
 ### Schemas
 
-| **Schema**        | **Type** | **Properties**                 |
-| :---------------- | :------- | :----------------------------- |
-| HotelInfoResponse | object   | uuid (string, uuid)            |
-|                   |          | name (string)                  |
-|                   |          | address (string)               |
-| RoomRequest       | object   | hotelName (string)             |
-|                   |          | numOfBeds (integer, int32)     |
-|                   |          | roomType (string)              |
-|                   |          | numberOfRooms (integer, int32) |
-| RoomResponse      | object   | hotelUUID (string, uuid)       |
-|                   |          | roomId (string, uuid)          |
-|                   |          | bedcount (integer, int32)      |
-|                   |          | roomType (string)              |
-|                   |          | roomStatus (integer, int32)    |
+| **Schema**         | **Type** | **Properties**                 |
+| :----------------- | :------- | :----------------------------- |
+| #HotelInfoResponse | object   | uuid (String, UUID)            |
+|                    |          | name (String)                  |
+|                    |          | address (String)               |
+| RoomRequest        | object   | hotelName (String)             |
+|                    |          | numOfBeds (Integer, int32)     |
+|                    |          | roomType (String)              |
+|                    |          | numberOfRooms (Integer, int32) |
+| RoomResponse       | object   | hotelUUID (String, UUID)       |
+|                    |          | roomId (String, UUID)          |
+|                    |          | bedcount (Integer, int32)      |
+|                    |          | roomType (String)              |
+|                    |          | roomStatus (Integer, int32)    |
 
 ## Installation
 
 Clone the git repository and install Java17 or higher
+and use swagger UI for the documentation of APIs.
 
 ```bash
   cd OnlinehotelbookingSystem
@@ -54,4 +54,7 @@ Clone the git repository and install Java17 or higher
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Maruf-Hasan1789/Online-Hotel-Booking-System/blob/master/Screenshot%20-hotel.png)
+![App Screenshot](https://github.com/Maruf-Hasan1789/Online-Hotel-Booking-System/blob/master/Screenshot%20-reservation.png)
+![App Screenshot](https://github.com/Maruf-Hasan1789/Online-Hotel-Booking-System/blob/master/Screenshot%20guest.png)
+![App Screenshot](https://github.com/Maruf-Hasan1789/Online-Hotel-Booking-System/blob/master/Screenshot%20discovery-server.png)
